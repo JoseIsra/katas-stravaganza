@@ -1,0 +1,103 @@
+:root {
+  /* reds / accents colors */
+  --base-red: hsl(0, 100%, 50%);
+  --red-shadow-1: hsl(0, 50%, 92%);
+  --red-shadow-2: hsl(0, 94%, 80%);
+  --red-shadow-3: hsl(0, 87%, 72%);
+  --red-shadow-4: hsl(0, 86%, 72%);
+  --red-shadow-5: hsl(0, 69%, 42%);
+  --red-shadow-8: hsl(0, 51%, 40%);
+  --red-shadow-9: hsl(0, 60%, 27%);
+
+  /* greys */
+  --grey-base: hsl(0, 0%, 50%);
+  --grey-shadow-1: hsl(0, 0%, 50%);
+  --grey-shadow-2: hsl(0, 3%, 40%);
+  --grey-shadow-3: hsl(212, 56%, 16%);
+  --grey-shadow-4: hsl(212, 18%, 32%);
+  --grey-shadow-9: hsl(224, 6%, 38%);
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 4rem;
+}
+.card {
+  width: 400px;
+  padding: 20px;
+  background-color: hsl(220, 0%, 95%);
+  border-top: 4px solid var(--red-shadow-4);
+}
+.card-title {
+  color: var(--grey-shadow-3);
+  font-weight: 500;
+  margin: 0;
+}
+
+.card-subtitle {
+  margin: 0;
+  color: var(--grey-shadow-4);
+  font-size: 18px;
+}
+.card-actions {
+  margin: 1.5rem 0;
+}
+.action {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  outline: none;
+}
+.delete {
+  background-color: var(--red-shadow-1);
+  color: var(--red-shadow-5);
+  font-weight: 500;
+}
+
+.cancel {
+  font-weight: 500;
+  color: var(--grey-shadow-9);
+}
+
+.box {
+  margin: 12px 0;
+  border-radius: 25px;
+  width: 120px;
+  height: 120px;
+}
+
+/* To make a color lighter,
+rotate the hue towards the 
+nearest bright hue — 60°,
+180°, or 300 */
+
+/* To make a color darker,
+rotate the hue towards the
+nearest dark hue — 0°,
+120°, or 240°. */
+
+/* While this is a great way to change 
+a color’s brightness without affecting
+its intensity, it works best in small doses.
+Don’t rotate the hue more than 20-30°
+or it will look like a totally different
+color instead of just lighter or darker. */
+.one {
+  background: linear-gradient(to top, hsl(190, 100%, 50%), hsl(210, 100%, 50%));
+}
+.two {
+  background: linear-gradient(
+    to bottom,
+    hsl(50, 100%, 50%),
+    hsl(32, 100%, 50%)
+  );
+}
+.three {
+  background: linear-gradient(
+    to bottom,
+    hsl(210, 100%, 75%),
+    hsl(210, 100%, 50%)
+  );
+}
